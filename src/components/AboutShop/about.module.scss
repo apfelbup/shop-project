@@ -1,0 +1,78 @@
+@import "../../variables.scss";
+
+
+.about{
+    text-align: center;
+    background-color: #F2F2F2;
+    padding: 30px 15px;
+    .logo{
+        margin-bottom: 1em;
+    }
+    .headline{
+        margin-bottom: 3em;
+    }
+    .blocks{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+        margin-bottom: 3em;
+    }
+}
+
+
+@media (min-width: 620px) {
+
+    .about{
+        text-align: center;
+        background-color: #F2F2F2;
+        padding: 50px 15px;
+        margin-bottom: 60px;
+        .logo{
+            margin-bottom: 1em;
+        }
+        .headline{
+            margin-bottom: 3em;
+        }
+        .blocks{
+            @include wrapper;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1em;
+            margin-bottom: 3em;
+        }
+    }
+
+}
+
+@media (min-width: 860px) {
+
+    .about{
+        padding: 30px 15px;
+        img{
+            width: 90px;
+        }
+        .logo{
+            margin-bottom: 1.5em;
+        }
+        .headline{
+            margin-bottom: 4em;
+            font-size: 1.2rem;
+        }
+        .blocks{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1.5em;
+            margin-bottom: 4em;
+            img{
+                width: 70px;
+                margin-bottom: .5em;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+}
+
+

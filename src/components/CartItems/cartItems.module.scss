@@ -1,0 +1,148 @@
+@import "../../variables.scss";
+
+
+.productBlock{
+    
+    padding: 0 10px;
+    display: flex;
+    margin-bottom: 1.5em;
+    .image{
+        width: 30vw;
+
+        margin-right: 1em;
+        img{
+            width: 100%;
+            height: 45vw;
+            object-fit: cover;
+        }
+    }
+
+    .info{
+        max-width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h4{
+            font-family: 'Tenor Sans';
+            font-size: 1.1rem;
+            line-height: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .countBlock{
+            margin-bottom: 1em;
+            display: flex;
+            align-items: center;
+            p{
+                font-size: 1.3rem;
+                padding: 0 1em;
+            }
+            button{
+                padding: 3px;
+                border: 1px solid #C4C4C4;
+                border-radius: 10%;
+                cursor: pointer;
+                background: none;
+
+            }
+        }
+        .price{
+            font-size: 1.2rem;
+            color: #DD8560;
+
+        }
+        .description{
+            margin-bottom: 1em;
+        }
+        .size{
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+    }
+    
+
+}
+
+@media (min-width: 425px) {
+    .productBlock{
+        .info{
+            .countBlock{
+                margin-bottom: 1.2em;
+                button{
+                    padding: 5px;
+    
+                }
+            }
+            h4{
+                font-size: 1.3rem;
+            }
+            .price{
+                font-size: 1.5rem;
+            }
+        }
+        
+    
+    }
+}
+
+@media (min-width: 610px) {
+    .productBlock{
+        padding: 0 30px;
+        display: flex;
+        .image{
+            width: 150px;
+    
+            margin-right: 2em;
+            img{
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+            }
+        }
+
+        .info{
+            .countBlock{
+                button{
+                    padding: 10px;
+    
+                }
+            }
+            h4{
+                font-size: 1.5rem;
+            }
+            .price{
+                font-size: 1.6rem;
+            }
+        }
+    }
+    
+}
+
+@media (min-width: 991px) {
+    .productBlock{
+        @include wrapper;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+
+    .productBlock{
+        padding: 0 30px;
+        display: flex;
+        .image{
+            width: 200px;
+    
+            margin-right: 2em;
+            img{
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+            }
+        }
+        
+        margin-bottom: 1.5em;
+    }
+    
+}
+

@@ -1,0 +1,46 @@
+@import '../../variables.scss';
+
+.root{
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    li{
+        display: inline-flex;
+
+    }
+    .selected{opacity: 0.4;}
+    a{
+        padding: 10px;
+        font-size: 1.2rem;
+        border: 1px solid #666;
+        border-radius: 100px;
+        margin-left: 10px;
+        cursor: pointer;
+        transition: all 0.2s;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+    
+}
+
+@media (min-width: 460px) {
+    .root{
+        a{
+            padding: 15px;
+            font-size: 1.5rem;
+        }
+        
+    }
+}
+
+@media (min-width: 600px) {
+    .root{
+        a{
+            padding: 20px;
+            font-size: 1.8rem;
+        }
+        
+    }
+}
+

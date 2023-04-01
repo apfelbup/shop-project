@@ -1,0 +1,44 @@
+@import "../../variables.scss";
+
+
+.productList{
+    position: relative;
+    @include wrapper;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 2em;
+
+        div{
+            position: relative;
+        }
+}
+
+.fetchStatus{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    font-weight: 600;
+    font-size: 2rem
+}
+
+.sort{
+    @include wrapper;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    p{
+        font-size: 1.5rem;
+        margin-right: .5em;
+    }
+    select{
+        padding: 5px;
+        font-size: 1rem;
+    }
+}

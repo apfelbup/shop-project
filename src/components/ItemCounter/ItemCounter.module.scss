@@ -1,0 +1,45 @@
+@import "../../variables.scss";
+
+
+.countBlock{
+        margin-bottom: 1em;
+        display: flex;
+        align-items: center;
+        p{
+            font-size: 1.3rem;
+            padding: 0 1em;
+        }
+        button{
+            padding: 3px;
+            border: 1px solid #C4C4C4;
+            border-radius: 10%;
+            cursor: pointer;
+            background: none;
+            &:hover{
+                opacity: 0.8;
+            }
+            &:after{
+                opacity: 0.4;
+            }
+        }
+}
+
+
+@media (min-width: 425px) {
+    .countBlock{
+        margin-bottom: 1.2em;
+        button{
+            padding: 5px;
+        }
+    }
+}
+
+@media (min-width: 610px) {
+            .countBlock{
+                button{
+                    padding: 10px;
+    
+                }
+            }
+
+        }

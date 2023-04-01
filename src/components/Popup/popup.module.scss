@@ -1,0 +1,104 @@
+@import "../../variables.scss";
+
+
+.popup{
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 20;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .block{
+        padding: 40px 20px;
+        background-color: #fff;
+        width: 77vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .title{
+            font-family: 'Tenor Sans';
+            font-size: 1.3rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            
+        }
+
+        .success{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                margin-bottom: 2em;
+            }
+            p{
+                color: $main-color;
+                font-size: 1.2rem;
+
+            }
+        }
+        button{
+            @include button;
+            width: 50vw;
+            padding: 15px;
+        }
+    }
+}
+
+
+@media (min-width: 520px) {
+    .popup{
+        .block{
+            width: 60vw;
+            height: 45vh;
+            .title{
+                font-size: 1.5rem;
+            }
+    
+            .success{
+                img{
+                    margin-bottom: 2.5em;
+                }
+                p{
+                    font-size: 1.3rem;
+                }
+            }
+            button{
+                width: 30vw;
+                padding: 15px;
+            }
+        }
+    }
+    
+}
+
+@media (min-width: 991px) {
+    .popup{
+        .block{
+            width: 550px;
+            height: 60vh;
+            .title{
+                font-size: 1.9rem;
+            }
+    
+            .success{
+                img{
+                    margin-bottom: 3em;
+                }
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+            button{
+                max-width: 300px;
+                width: 100%;
+            }
+        }
+    }
+    
+}

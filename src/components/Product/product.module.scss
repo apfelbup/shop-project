@@ -1,0 +1,248 @@
+@import "../../variables.scss";
+
+
+.productBlock{
+    padding: 0 15px;
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    .image{
+        width: 80vw;
+        margin: 0 auto 2em auto;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    h4{
+        font-family: 'Tenor Sans';
+        font-size: 1.3rem;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: .5em;
+    }
+
+    .info{
+        font-size: 1.2em;
+        line-height: 19px;
+        text-transform: capitalize;
+        margin-bottom: 2em;
+        
+    }
+
+    .rating{
+        font-size: 1.5em;
+        text-transform: capitalize;
+        margin-bottom: .3em;
+    }
+
+
+        .price{
+            font-size: 1.6em;
+            margin-bottom: .5em;
+            color: #DD8560;
+
+        }
+
+    .sizes{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5em;
+        p{
+            margin-right: .5em;
+            font-size: 1.5rem;
+        }
+        label{
+            transition: opacity, 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            line-height: 25px;
+            cursor: pointer;
+            font-size: 1.3rem;
+            font-weight: 600;
+            padding: .2em;
+            border-radius: 15%;
+            border: 1px solid #000000;
+            margin-right: .7em;
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+        input:checked+label{
+            color: #fff;
+            background-color: $price-color;
+            border-color: $price-color;
+        }
+        input{
+            display: none;
+        }
+
+    }
+}
+
+.bottom{
+    margin-top: 3em;
+    div{
+        margin-bottom: 2.2em;
+    }
+    h2{
+        font-family: 'Tenor Sans';
+        font-size: 1.1rem;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: .5em;
+    }
+
+    .careList{
+        li{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: .5em;
+            }
+        }
+        li+li{
+            margin-top: .8em;
+        }
+    }
+
+}
+
+@media (min-width: 425px) {
+    .productBlock{
+        .info{
+            .countBlock{
+                margin-bottom: 1.2em;
+                button{
+                    padding: 5px;
+    
+                }
+            }
+            h4{
+                font-size: 1.3rem;
+            }
+            .price{
+                font-size: 1.5rem;
+            }
+        }
+        
+    
+    }
+}
+
+@media (min-width: 630px) {
+.productBlock{
+    .image{
+        width: auto;
+        margin: 0 auto 2em auto;
+    }
+}
+}
+
+@media (min-width: 800px) {
+    .productBlock{
+    
+        h4{
+            font-size: 2.2rem;
+            line-height: normal;
+            letter-spacing: 3px;
+            margin-bottom: .6em;
+        }
+    
+        .info{
+            font-size: 1.5em;
+            line-height: normal;
+            margin-bottom: 2.5em;
+            
+        }
+    
+        .rating{
+            font-size: 2em;
+            text-transform: capitalize;
+            margin-bottom: .5em;
+        }
+    
+    
+            .price{
+                font-size: 2.1em;
+                margin-bottom: 1em;
+            }
+    }
+    
+}
+
+
+@media (min-width: 991px) {
+    .content{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 900px;
+        .right{
+            margin-bottom: 2em;
+        }
+    }
+
+    .productBlock{
+        padding: 0 15px;
+        display: flex;
+        flex-direction: row;
+
+    }
+    
+    .bottom{
+        width:25vw;
+        margin-top: 0em;
+        margin-right: 1em;
+        div{
+            margin-bottom: 2.2em;
+        }
+        h2{
+            font-family: 'Tenor Sans';
+            font-size: 1.1rem;
+            line-height: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #000000;
+            margin-bottom: .5em;
+        }
+    
+    
+    }
+}
+
+
+@media (min-width: 991px) {
+    .productBlock{
+        @include wrapper;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+
+    .productBlock{
+        padding: 0 30px;
+        .image{
+            width:500px;
+    
+            margin-right: 4em;
+            img{
+                width: 100%;
+                height: 700px;
+                object-fit: cover;
+            }
+        }
+        
+        margin-bottom: 1.5em;
+    }
+    
+}

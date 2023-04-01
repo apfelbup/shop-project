@@ -1,0 +1,37 @@
+@import "../../variables.scss";
+
+
+.notFound{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px;
+    margin: 4em 0;
+    height: 60vh;
+    .title{
+        text-align: center;
+        font-size: 1.3rem;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 80px;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            margin-bottom: 1.2em;
+        }
+        p{
+            max-width: 320px;
+            margin-bottom: 3em;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        a{
+            @include button;
+        }
+    }
+}
+
